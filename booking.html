@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growthzi Doctor</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="index.html" class="logo">Growthzi Doctor</a>
+    
+          <nav class="navbar">
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="doctor.html">Doctors</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="booking.html" class="btn book-btn">Book Now</a>
+          </nav>
+    
+          <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+            ☰
+          </div>
+        </div>
+      </div>
+    </header>
+    
+
+    <!-- Booking Section -->
+    <section class="elementor-section booking-page" data-id="booking-page" data-element_type="section">
+      <div class="container">
+        <h2 class="section-title">Appointment Booking</h2>
+        <div class="booking-cart" id="cart-container">
+          <!-- Dynamically filled by JS -->
+        </div>
+
+        <div class="booking-form">
+          <h3>Patient Information</h3>
+          <form id="appointment-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="tel" placeholder="Phone Number" required />
+            <textarea placeholder="Additional Notes (Optional)"></textarea>
+            <button type="submit" class="btn">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h2 class="footer-logo">Growthzi Doctor</h2>
+            <p>Providing quality healthcare services with expert professionals and modern facilities.</p>
+          </div>
+    
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="doctor.html">Doctors</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <p>Email: info@growthzidoctor.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <!-- <div class="social-icons">
+              <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
+              <a href="#"><img src="images/twitter.svg" alt="Twitter" /></a>
+              <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+            </div> -->
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Growthzi Doctor. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
