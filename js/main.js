@@ -88,3 +88,23 @@ function toggleMobileMenu() {
   const navList = document.querySelector('.nav-list');
   navList.classList.toggle('active');
 }
+// Load header and footer
+document.getElementById('header-placeholder').innerHTML = '<object type="text/html" data="header.html"></object>';
+document.getElementById('footer-placeholder').innerHTML = '<object type="text/html" data="footer.html"></object>';
+
+// Modal logic
+document.querySelectorAll('.view-details-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    const card = e.target.closest('.doctor-card');
+    document.getElementById('doc-name').innerText = card.dataset.name;
+    document.getElementById('doc-speciality').innerText = card.dataset.speciality;
+    document.getElementById('doc-description').innerText = card.dataset.description;
+    document.getElementById('doc-price').innerText = card.dataset.price;
+
+    document.getElementById('doctor-detail-modal').classList.remove('hidden');
+  });
+});
+
+document.querySelector('.close-btn').addEventListener('click', () => {
+  document.getElementById('doctor-detail-modal').classList.add('hidden');
+});
